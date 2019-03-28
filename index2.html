@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Select Drop-Down List with just CSS</title>
+<style>
+  .drop-down-class select {
+    border: 0 !important;  
+    -webkit-appearance: none;  
+    -moz-appearance: none; 
+    background-color: #778899;
+    width: 100px; 
+    text-indent: 1px; 
+    text-overflow: ""; 
+    color: #000000;
+    padding: 5px;
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 10px;	
+  }
+  .drop-down-class select.second {
+    background-color: grey;
+  }
+  .drop-down-class select.first {
+    border-radius: 0px 10px;
+  }
+  .drop-down-class select.third {
+    border-radius: 10px 0px;
+  }
+  .Select_list {
+    width: 500px;
+    height: 150px;
+    border: 1px solid #BA55D3;	
+    border-radius: 10px;
+    background-color: #FFDAB9;
+  }
+  .Select_list select {
+    margin: 0 30px;	
+  }
+  h3 {
+    padding: 5px;	
+  }			
+</style>
+</head>
+<body>
+<div class = "Select_list">
+  <h3>Remove the select drop down using css alone</h3>
+  <form class="drop-down-class">
+    <select class="first">
+      <option>option1</option>
+      <option>option2</option>
+      <option>option3</option>
+    </select>
+    <select class="second">
+      <option>option1</option>
+      <option>option2</option>
+      <option>option3</option>
+    </select>
+    <select class="third">
+      <option>option1</option>
+      <option>option2</option>
+      <option>option2</option>
+    </select>
+  </form>
+</div>
+</body>
+</html>
